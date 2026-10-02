@@ -1,12 +1,12 @@
 :root {
   --bg: #fec7d7;
-  --surface: #f582ae;
-  --surface-hover: #f36f9e;
+  --surface: #e8458b;
+  --surface-hover: #d93479;
   --accent: #c9436c;
-  --icon-bg: #f582ae;
-  --button-text: #ffffff;
-  --text: #2b1320;
-  --muted: #7a3550;
+  --icon-bg: #e8458b;
+  --button-text: #000000;
+  --text: #000000;
+  --muted: #000000;
   --border: #f2a4c0;
 }
 
