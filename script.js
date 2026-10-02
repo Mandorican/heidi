@@ -41,7 +41,16 @@
 
   function scrambleText(el, duration) {
     var target = el.querySelector('.name-dark') || el;
-    var original = target.textContent;
+
+    if (!target.dataset.originalText) {
+      target.dataset.originalText = target.textContent;
+    }
+    if (target.dataset.scrambling === 'true') {
+      return;
+    }
+    target.dataset.scrambling = 'true';
+
+    var original = target.dataset.originalText;
     var length = original.length;
     var frame = 0;
     var totalFrames = Math.max(1, Math.round(duration / 40));
@@ -62,6 +71,7 @@
       if (frame >= totalFrames) {
         clearInterval(interval);
         target.textContent = original;
+        target.dataset.scrambling = 'false';
       }
     }, 40);
   }
