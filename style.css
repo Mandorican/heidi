@@ -4,7 +4,7 @@
   --surface-hover: #f36f9e;
   --accent: #c9436c;
   --icon-bg: #f582ae;
-  --button-text: #ffffff;
+  --button-text: #000000;
   --text: #000000;
   --muted: #000000;
   --border: #f2a4c0;
@@ -17,7 +17,7 @@
   --accent: #ccff00;
   --icon-bg: #ccff00;
   --button-text: #000000;
-  --text: #f3f1ec;
+  --text: #ffffff;
   --muted: #8b94a3;
   --border: #2a3340;
 }
